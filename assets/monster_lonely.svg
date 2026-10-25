@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- 背景漸層 (寂寞的薄霧灰綠色) -->
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="ballGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#475569" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bgGrad2)" rx="24"/>
+
+  <!-- 地面影子 -->
+  <ellipse cx="200" cy="355" rx="100" ry="20" fill="#64748b" opacity="0.3" />
+
+  <!-- 毛線刺蝟毛刺刺 (周圍外輪廓毛邊) -->
+  <g fill="#94a3b8" filter="url(#shadow2)">
+    <!-- 多個突出的刺刺圓錐 -->
+    <polygon points="120,200 85,170 140,180" />
+    <polygon points="100,240 60,225 120,235" />
+    <polygon points="110,285 70,290 130,275" />
+    <polygon points="140,150 115,115 165,140" />
+    <polygon points="190,120 185,75 220,120" />
+    <polygon points="250,140 280,105 255,155" />
+    <polygon points="280,180 325,160 275,210" />
+    <polygon points="295,240 335,235 280,260" />
+    <polygon points="280,290 320,310 265,295" />
+  </g>
+
+  <!-- 球球主身體 (抱著膝蓋蜷縮的毛球) -->
+  <circle cx="200" cy="245" r="110" fill="url(#ballGrad)" filter="url(#shadow2)" />
+
+  <!-- 蜷縮抱膝蓋的小手手臂 -->
+  <g fill="#64748b">
+    <ellipse cx="145" cy="275" rx="28" ry="20" transform="rotate(-25 145 275)" />
+    <ellipse cx="255" cy="275" rx="28" ry="20" transform="rotate(25 255 275)" />
+  </g>
+
+  <!-- 眼睛 (怯生生、寂寞向上看) -->
+  <ellipse cx="170" cy="215" rx="13" ry="17" fill="#1e293b" />
+  <circle cx="166" cy="210" r="5" fill="#ffffff" />
+  <circle cx="173" cy="221" r="2.5" fill="#ffffff" />
+
+  <ellipse cx="230" cy="215" rx="13" ry="17" fill="#1e293b" />
+  <circle cx="226" cy="210" r="5" fill="#ffffff" />
+  <circle cx="233" cy="221" r="2.5" fill="#ffffff" />
+
+  <!-- 寂寞的小嘴 (緊閉一線) -->
+  <path d="M 192,242 L 208,242" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+
+  <!-- 掉落在一旁的孤單皮球/分組標籤 -->
+  <g transform="translate(275, 305)">
+    <circle cx="25" cy="25" r="22" fill="#cbd5e1" stroke="#94a3b8" stroke-width="3" />
+    <path d="M 10,25 C 20,12 35,12 40,25" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <text x="14" y="29" font-family="Arial" font-size="12" font-weight="bold" fill="#64748b">落單</text>
+  </g>
+</svg>

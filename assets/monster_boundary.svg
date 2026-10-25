@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- 背景漸層 (警戒的活力暖橘黃) -->
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+    <linearGradient id="foxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="70%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#c2410c" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bgGrad3)" rx="24"/>
+
+  <!-- 頭頂生氣符號 💢 與驚嘆號 ❗️ -->
+  <g transform="translate(245, 60)">
+    <path d="M 10,0 L 25,12 M 25,0 L 10,12 M 5,6 L 30,6 M 17,-2 L 17,16" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+  <g transform="translate(140, 50)">
+    <rect x="6" y="0" width="8" height="24" rx="4" fill="#ef4444" />
+    <circle cx="10" cy="32" r="4.5" fill="#ef4444" />
+  </g>
+
+  <!-- 尾巴 (蓬鬆大尾巴立起) -->
+  <path d="M 270,270 C 350,260 370,160 330,130 C 310,115 285,150 265,190 Z" fill="#ea580c" filter="url(#shadow3)" />
+  <path d="M 330,130 C 320,150 300,160 310,135 Z" fill="#ffffff" />
+
+  <!-- 狐狸耳朵 (豎直警戒) -->
+  <!-- 左耳 -->
+  <polygon points="120,180 150,90 190,160" fill="#f97316" />
+  <polygon points="135,170 155,108 180,155" fill="#fef08a" />
+  <!-- 右耳 -->
+  <polygon points="280,180 250,90 210,160" fill="#f97316" />
+  <polygon points="265,170 245,108 220,155" fill="#fef08a" />
+
+  <!-- 主身體與臉龐 -->
+  <ellipse cx="200" cy="265" rx="85" ry="95" fill="url(#foxGrad)" filter="url(#shadow3)" />
+
+  <!-- 白色胸腹與面頰 -->
+  <path d="M 140,240 Q 200,320 260,240 Q 200,285 140,240 Z" fill="#ffffff" />
+  <ellipse cx="200" cy="305" rx="45" ry="40" fill="#fef08a" opacity="0.8" />
+
+  <!-- 雙手叉腰生氣姿態 -->
+  <!-- 左手臂叉腰 -->
+  <path d="M 130,250 C 95,260 90,300 125,290" fill="none" stroke="#ea580c" stroke-width="18" stroke-linecap="round" />
+  <!-- 右手臂叉腰 -->
+  <path d="M 270,250 C 305,260 310,300 275,290" fill="none" stroke="#ea580c" stroke-width="18" stroke-linecap="round" />
+
+  <!-- 堅決警戒的眼睛 (倒八字生氣/抗議) -->
+  <!-- 左眼 -->
+  <path d="M 160,205 L 185,215" stroke="#431407" stroke-width="5" stroke-linecap="round" />
+  <circle cx="170" cy="225" r="9" fill="#431407" />
+  <circle cx="168" cy="223" r="3" fill="#ffffff" />
+  <!-- 右眼 -->
+  <path d="M 240,205 L 215,215" stroke="#431407" stroke-width="5" stroke-linecap="round" />
+  <circle cx="230" cy="225" r="9" fill="#431407" />
+  <circle cx="228" cy="223" r="3" fill="#ffffff" />
+
+  <!-- 小黑鼻子與生氣嘟嘴 -->
+  <polygon points="194,236 206,236 200,244" fill="#431407" />
+  <path d="M 190,255 Q 200,246 210,255" fill="none" stroke="#431407" stroke-width="4" stroke-linecap="round" />
+
+  <!-- 面前被拿走的彩色筆/文具盒標誌 -->
+  <g transform="translate(145, 330)">
+    <rect width="110" height="26" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+    <rect x="8" y="6" width="30" height="14" rx="4" fill="#ef4444" />
+    <rect x="42" y="6" width="30" height="14" rx="4" fill="#3b82f6" />
+    <rect x="76" y="6" width="25" height="14" rx="4" fill="#eab308" />
+  </g>
+</svg>
